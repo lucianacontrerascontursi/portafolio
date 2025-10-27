@@ -43,6 +43,15 @@
 
 /*empiezan las aplicaciones*/
 
+h1 {
+    font-family: 'Boska BlackItalic', serif;
+}
+
+h2,
+h3 {
+    font-family: 'Archivo Italic', sans-serif;
+}
+
 /*la botonera*/
 header {
     display: flex;
@@ -75,3 +84,26 @@ a {
 }
 
 /*el footer*/
+
+/*index*/
+
+/*sobre mi*/
+
+#breve-intro,
+#formacion-academica,
+#experiencia-laboral {
+    border: solid #1A1AA2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caja-a {
+    display: flex;
+    gap: 20px;
+}
+
+/*contactame*/
