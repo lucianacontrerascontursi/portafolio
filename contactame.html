@@ -18,18 +18,22 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <h1>Contactame</h1>
-            <h2>¿Querés trabajar conmigo en un proyecto?</h2>
-        </div>
-        <form method="post" action="" target="_blank" enctype="text/plain">
-            <label for="Nombre">Nombre:</label>
-            <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre completo" required>
-            <label for="Email">Email:</label>
-            <input type="email" name="Email" id="Email" required>
-            <label for="Consulta">Consulta</label>
-            <textarea name="Consulta" id="Consulta"></textarea>
+    <main id="general-formulario">
+        <h1>Contactame</h1>
+        <h2>¿Querés trabajar conmigo en un proyecto?</h2>
+        <form id="formulario-contacto" method="post" action="" target="_blank" enctype="text/plain">
+            <div class="form-grupo">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-grupo">
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email" required>
+            </div>
+            <div class="form-grupo">
+                <label for="Consulta">Consulta</label>
+                <textarea name="Consulta" id="Consulta"></textarea>
+            </div>
             <div>
                 <input type="reset" value="Borrar">
                 <input type="submit" value="Enviar">

@@ -37,7 +37,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
-    box-sizing: b;
+    box-sizing: 0;
     gap: 20px;
 }
 
@@ -45,6 +45,7 @@
 
 h1 {
     font-family: 'Boska BlackItalic', serif;
+    font-size: 5rem;
 }
 
 h2,
@@ -104,6 +105,36 @@ a {
 .caja-a {
     display: flex;
     gap: 20px;
+    flex-direction: column;
+}
+
+.caja-b {
+    display: flex;
+    gap: 20px;
 }
 
 /*contactame*/
+
+#general-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #1A1AA2;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.form-grupo,
+input,
+textarea {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
