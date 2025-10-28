@@ -32,13 +32,13 @@
 
 * {
     font-family: 'Archivo Regular', sans-serif;
-    background-color: #F7F1E8;
-    color: #1A1AA2;
+    background-color: #F7F1E8; /* es muy riesgoso poner esta propiedad en el selector universal, es mejor ponerlo en el body porque te está condicionando a repetirlo en todos lados*/
+    color: #1A1AA2; /* idem línea anterior */
     box-sizing: border-box;
     margin: 0px;
     padding: 0;
-    box-sizing: 0;
-    gap: 20px;
+    box-sizing: 0; /* así no se escribe esta propiedad! */
+    gap: 20px; /* sin flex el gap no va a funcionar */
 }
 
 /*empiezan las aplicaciones*/
@@ -64,16 +64,16 @@ ul {
 }
 
 .botonera {
-    background-color: #1A1AA2;
-    color: #F7F1E8;
+    background-color: #1A1AA2; 
+    color: #F7F1E8; 
     padding: 10px 60px;
     margin: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* es necesaria la propiedad? */
     justify-content: space-around;
-    align-items: center;
+    align-items: center; /* es necesaria la propiedad? */
     border-radius: 50px;
-    width: 800px;
+    width: 800px; /* guarda con los anchos fijos! hay otra solución */
 }
 
 a {
@@ -81,7 +81,7 @@ a {
     background-color: #1A1AA2;
     color: #F7F1E8;
     padding: 10px;
-    gap: 20px;
+    gap: 20px; /* es necesaria la propiedad? */
 }
 
 /*el footer*/
@@ -136,5 +136,6 @@ input,
 textarea {
     display: flex;
     flex-direction: column;
-    border: none;
+    border: none; 
+    /* para arreglar el espacio entre los formularios te hace falta que acá haya un gap, también ayudaría al resultado estético un border-radius. Fijate que los botones de enviar quedan muuuy chiquitos */
 }
