@@ -32,24 +32,30 @@
 
 * {
     font-family: 'Archivo Regular', sans-serif;
-    background-color: #F7F1E8;
-    color: #1A1AA2;
     box-sizing: border-box;
     margin: 0px;
-    padding: 0;
-    box-sizing: 0;
-    gap: 20px;
 }
 
 /*empiezan las aplicaciones*/
 
-h1 {
-    font-family: 'Boska BlackItalic', serif;
-    font-size: 5rem;
+body {
+    background-color: #F7F1E8;
+    color: #1A1AA2;
 }
 
-h2,
-h3 {
+h1 {
+    font-family: 'Boska BlackItalic', serif;
+    font-size: 9rem;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Boska BlackItalic', serif;
+    font-size: 4rem;
+}
+
+h3,
+h4 {
     font-family: 'Archivo Italic', sans-serif;
 }
 
@@ -69,9 +75,7 @@ ul {
     padding: 10px 60px;
     margin: 30px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     border-radius: 50px;
     width: 800px;
 }
@@ -81,14 +85,39 @@ a {
     background-color: #1A1AA2;
     color: #F7F1E8;
     padding: 10px;
-    gap: 20px;
 }
 
-/*el footer*/
+/*------el footer------*/
+#textos-abajo {
+    display: flex;
+    flex-direction: column;
+}
 
-/*index*/
+audio{
+    width: 300px;
+}
 
-/*sobre mi*/
+/*------index------*/
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+}
+
+#hero h2 {
+    font-family: 'Archivo Italic';
+    line-height: 1;
+}
+
+/*------sobre mi------*/
+
+#sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #breve-intro,
 #formacion-academica,
@@ -97,9 +126,39 @@ a {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 3rem;
+    margin: 1rem;
+    max-width: 800px;
+    min-width: 800px;
+}
+
+#caja-o {
+    display: flex;
+    justify-content: center;
+}
+
+#programas,
+#habilidades {
+    background-color: #1A1AA2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+#programas h3,
+#habilidades h3 {
+    background-color: #1A1AA2;
+    color: #F7F1E8;
+}
+
+#losprogramas {
+    background-color: #1A1AA2;
+    display: flex;
 }
 
 .caja-a {
@@ -113,7 +172,7 @@ a {
     gap: 20px;
 }
 
-/*contactame*/
+/*------contactame------*/
 
 #general-formulario {
     display: flex;
@@ -129,12 +188,61 @@ a {
     background-color: #1A1AA2;
     padding: 30px;
     border-radius: 25px;
+    margin: 1rem;
 }
 
 .form-grupo,
-input,
 textarea {
     display: flex;
     flex-direction: column;
     border: none;
+    background-color: #1A1AA2;
+    padding-bottom: 1rem;
+}
+
+
+.form-grupo label {
+    background-color: #1A1AA2;
+    color: #F7F1E8;
+}
+
+.form-grupo input {
+    height: 56px;
+    padding: 0px 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+#Consulta {
+    background-color: #F7F1E8;
+    height: 150px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.form-botones {
+    background-color: #1A1AA2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-borrar {
+    color: #F7F1E8;
+    background-color: #1A1AA2;
+    border-color: #F7F1E8;
+}
+
+.boton-enviar {
+    padding: 15px 30px;
+    background-color: #F7F1E8;
+    color: #1A1AA2;
+}
+
+.boton-borrar,
+.boton-enviar {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Boska BlackItalic';
+    font-size: 1rem;
 }

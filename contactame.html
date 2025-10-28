@@ -19,8 +19,8 @@
         </nav>
     </header>
     <main id="general-formulario">
-        <h1>Contactame</h1>
-        <h2>¿Querés trabajar conmigo en un proyecto?</h2>
+        <h2>Contactame</h2>
+        <h3>¿Querés trabajar conmigo en un proyecto?</h3>
         <form id="formulario-contacto" method="post" action="" target="_blank" enctype="text/plain">
             <div class="form-grupo">
                 <label for="Nombre">Nombre:</label>
@@ -28,21 +28,29 @@
             </div>
             <div class="form-grupo">
                 <label for="Email">Email:</label>
-                <input type="email" name="Email" id="Email" required>
+                <input type="email" name="Email" id="Email" placeholder="Tu Mail" required>
             </div>
             <div class="form-grupo">
                 <label for="Consulta">Consulta</label>
                 <textarea name="Consulta" id="Consulta"></textarea>
             </div>
-            <div>
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
+            <div class="form-botones">
+                <input type="reset" value="Borrar" class="boton-borrar">
+                <input type="submit" value="Enviar" class="boton-enviar">
             </div>
         </form>
     </main>
     <footer>
-        <p>Cátedra Wischeñevsky 2025.</p>
-        <p>Todos los derechos reservados.</p>
+        <section id="textos-abajo">
+            <p>Cátedra Wischeñevsky 2025.</p>
+            <p>Todos los derechos reservados.</p>
+        </section>
+        <section id="musica">
+            <audio src="audio/the-last-dinner-party-the-feminine-urge.mp3" controls autoplay loop muted>
+                <source src="audio/the-last-dinner-party-the-feminine-urge.ogg" type="audio/ogg">
+                <source src="audio/the-last-dinner-party-the-feminine-urge.wav" type="audio/wav">
+            </audio>
+        </section>
     </footer>
 </body>
 
