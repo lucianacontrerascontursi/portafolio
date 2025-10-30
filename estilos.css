@@ -97,11 +97,13 @@ a {
     border-radius: 0px 20px 20px 0px;
     position: fixed;
     left: 0;
-    padding: 0;
+    padding: 10px;
+    top: 30%;
 }
 
-#a-costado{
-
+#acostado {
+    background-color: #F7F1E8;
+    padding: 0px;
 }
 
 /*------el footer------*/
@@ -184,7 +186,8 @@ audio {
 }
 
 #programas h3,
-#habilidades h3,#item {
+#habilidades h3,
+#item {
     background-color: #1A1AA2;
     color: #F7F1E8;
     list-style-type: none;
@@ -328,4 +331,18 @@ summary {
 
 .imagen {
     border-radius: 25px;
+}
+
+.galeria-diseño {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 20px;
+}
+
+#breve-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
