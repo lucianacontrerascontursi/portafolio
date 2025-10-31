@@ -3,37 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciana Contreras Contursi Portafolio</title>
     <link rel="stylesheet" href="estilos.css">
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <nav class="botonera">
-            <ul>
-                <a href="index.html">INICIO</a>
-                <a href="sobremi.html">SOBRE MI</a>
-                <a href="trabajos.html">TRABAJOS</a>
-                <a href="contactame.html">CONTACTAME</a>
+            <ul id="botones">
+                <a href="index.html" class="boton">INICIO</a>
+                <a href="sobremi.html" class="boton">SOBRE MI</a>
+                <a href="trabajos.html" class="boton">TRABAJOS</a>
+                <a href="contactame.html" class="boton">CONTACTAME</a>
             </ul>
         </nav>
     </header>
     <main id="Trabajos">
         <h2>Trabajos</h2>
-        <section id="Acordeon">
+        <section id="acordeon">
             <article id="ilustracion-digital">
                 <details>
                     <summary>Ilustración Digital</summary>
                     <div class="galeria-imagenes">
-                        <img src="img/imagen-payasa-pequeña.jpg" width="260px" height="260px" alt="payasa" class="imagen">
-                        <img src="img/imagen-pareja-payasos-pequeña.jpg" width="260px" height="260px" alt="pareja-payasos" class="imagen">
-                        <img src="img/imagen-iris-pequeña.jpg" width="260px" height="260px" alt="iris" class="imagen">
-                        <img src="img/imagen-corazon-diamante-pequeña.jpg" width="260px" height="260px" alt="chica-con-corazon-de-diamante" class="imagen">
-                        <img src="img/imagen-ojo-pequeña.jpg" width="260px" height="260px" alt="ojo" class="imagen">
-                        <img src="img/imagen-estrella-pequeña.jpg" width="260px" height="260px" alt="chica-con-estrella" class="imagen">
-                        <img src="img/imagen-sombrero-pequeña.jpg" width="260px" height="260px" alt="chica-con-sombrero" class="imagen">
-                        <img src="img/imagen-tacita-pequeña.jpg" width="260px" height="260px" alt="tacita" class="imagen">
-                        <img src="img/imagen-corazon-oscuro-pequeña.jpg" width="260px" height="260px" alt="corazon" class="imagen">
+                        <a href="#foto-1"><img src="img/imagen-payasa-pequeña.jpg" width="260px" height="260px"
+                                alt="payasa" class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-2">
+                            <img src="img/imagen-pareja-payasos-pequeña.jpg" width="260px" height="260px"
+                                alt="pareja-payasos" class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-3">
+                            <img src="img/imagen-iris-pequeña.jpg" width="260px" height="260px" alt="iris"
+                                class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-4">
+                            <img src="img/imagen-corazon-diamante-pequeña.jpg" width="260px" height="260px"
+                                alt="chica-con-corazon-de-diamante" class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-5">
+                            <img src="img/imagen-ojo-pequeña.jpg" width="260px" height="260px" alt="ojo" class="imagen"
+                                onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-6">
+                            <img src="img/imagen-estrella-pequeña.jpg" width="260px" height="260px"
+                                alt="chica-con-estrella" class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-7">
+                            <img src="img/imagen-sombrero-pequeña.jpg" width="260px" height="260px"
+                                alt="chica-con-sombrero" class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-8">
+                            <img src="img/imagen-tacita-pequeña.jpg" width="260px" height="260px" alt="tacita"
+                                class="imagen" onClick="mostrarGaleria()">
+                        </a>
+                        <a href="#foto-9">
+                            <img src="img/imagen-corazon-oscuro-pequeña.jpg" width="260px" height="260px" alt="corazon"
+                                class="imagen" onClick="mostrarGaleria()">
+                        </a>
                     </div>
                     </div>
                 </details>
@@ -42,9 +80,12 @@
                 <details>
                     <summary>Ilustración Tradicional</summary>
                     <div class="galeria-imagenes">
-                        <img src="img/imagen-vagabundo-pequeña.jpg" width="260px" height="260px" alt="payaso-vagabundo" class="imagen">
-                        <img src="img/imagen-pierrot-pequeña.jpg" width="260px" height="260px" alt="payaso-pierrot" class="imagen">
-                        <img src="img/imagen-augusto-pequeña.jpg" width="260px" height="260px" alt="payaso-augusto" class="imagen">
+                        <img src="img/imagen-vagabundo-pequeña.jpg" width="260px" height="260px" alt="payaso-vagabundo"
+                            class="imagen">
+                        <img src="img/imagen-pierrot-pequeña.jpg" width="260px" height="260px" alt="payaso-pierrot"
+                            class="imagen">
+                        <img src="img/imagen-augusto-pequeña.jpg" width="260px" height="260px" alt="payaso-augusto"
+                            class="imagen">
                     </div>
                 </details>
             </article>
@@ -52,14 +93,97 @@
                 <details>
                     <summary>Diseño</summary>
                     <div class="galeria-diseño">
-                        <img src="img/imagen-mazo-uno-pequeña.jpg" width="800px" height="260px" alt="mazo-de-cartas-con-flores" class="imagen">
-                        <img src="img/imagen-el-espectacular-pequeña.jpg" width="800px" height="260px" alt="el-espectacular" class="imagen">
-                        <img src="img/imagen-mazo-dos-pequeña.jpg" width="800px" height="260px" alt="mazo-de-cartas-españolas" class="imagen">
-                        <img src="img/imagen-leeroreventar-pequeña.jpg" width="800px" height="260px" alt="leer-o-reventar" class="imagen">
+                        <img src="img/imagen-mazo-uno-pequeña.jpg" width="800px" height="260px"
+                            alt="mazo-de-cartas-con-flores" class="imagen">
+                        <img src="img/imagen-el-espectacular-pequeña.jpg" width="800px" height="260px"
+                            alt="el-espectacular" class="imagen">
+                        <img src="img/imagen-mazo-dos-pequeña.jpg" width="800px" height="260px"
+                            alt="mazo-de-cartas-españolas" class="imagen">
+                        <img src="img/imagen-leeroreventar-pequeña.jpg" width="800px" height="260px"
+                            alt="leer-o-reventar" class="imagen">
                     </div>
                 </details>
             </article>
         </section>
+        <!--galeria oculta-->
+        <section id="galeria">
+            <div id="fondo-galeria"></div>
+            <ul id="galeria-oculta">
+                <li class="fraccion" id="foto-1">
+                    <a href="#" class="primer-ultima-flecha"><img class="flecha" src="img/anterior.svg" width="40px"
+                            height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-2"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-2">
+                    <a href="#foto-1" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-3"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-3">
+                    <a href="#foto-2" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-4"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-4">
+                    <a href="#foto-3" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-5"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-5">
+                    <a href="#foto-4" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-6"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-6">
+                    <a href="#foto-5" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-7"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-7">
+                    <a href="#foto-6" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-8"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-8">
+                    <a href="#foto-7" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#foto-9"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+                <li class="fraccion" id="foto-9">
+                    <a href="#foto-8" class="flecha"><img class="flecha" src="img/anterior.svg"
+                            width="40px" height="23px" alt="anterior"></a>
+                    <img class="close" src="img/cerrado.svg" width="40px" height="23px" alt="cerrar"
+                        onClick="ocultarGaleria()">
+                    <a href="#"><img class="flecha" src="img/siguiente.svg" width="40px" height="23px"
+                            alt="siguiente"></a>
+                </li>
+            </ul>
+        </section>
+        <!--fin de galeria oculta-->
         <aside>
             <ul class="costado">
                 <li>
