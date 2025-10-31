@@ -1,6 +1,6 @@
 # TP3_CONTRERAS_CONTURSI_LUCIANA
 
-# #Memoria
+## Memoria
 
 El portafolio se hizo a partir del portafolio realizado en Figma e intentándolo replicar. Comencé haciendo los 1 html y la hoja de estilos y vinculándolas entre sí, para luego en ese html generar la estructura base como por ejemplo: head, body, header, main, footer, etc de las otras 3 páginas que estarían vinculadas, sumando obviamente los elementos que se repetían en cada uno (como el nav y el footer).
 Se utilizó JavaScript únicamente para realizar la galería de imágenes, siguiendo el tutorial de Galería a mano dado por la catedra.
